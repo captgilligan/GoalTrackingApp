@@ -16,7 +16,7 @@ public class App : MonoBehaviour
     public static App Instance { get; private set; }
 
 
-    public Dictionary<string, List<Task>> entries = new Dictionary<string, List<Task>>();
+    public HashSet<Entry> entries = new HashSet<Entry>();
 
     public Button logHomeButton;
     public GameObject loadingCircle;
@@ -64,6 +64,6 @@ public class App : MonoBehaviour
 
 
 
-        logger.SetupLogData(toda)
+        //logger.SetupLogData(toda)
     }
 }

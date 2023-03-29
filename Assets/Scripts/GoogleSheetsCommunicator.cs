@@ -20,6 +20,7 @@ public class GoogleSheetsCommunicator : MonoBehaviour
 
     public List<Task> tempList = new List<Task>();
 
+
     public bool SheetRead;
 
     private void Start()
@@ -100,27 +101,28 @@ public class GoogleSheetsCommunicator : MonoBehaviour
             }
 
             //are entries
-            else
-            {
-                Entry tempentry = new Entry();
+            //else
+            //{
+            //    Entry tempEntry = new Entry();
+            //    for (int i = 1; i < details.Length; i++)
+            //    {
+            //        Task task = new Task(tempList[i - 1].taskTitle, tempList[i-1].taskDescription);
 
-                tempentry.tasks = tempList;
-                tempentry.todaysDate = details[0];
+            //        if (details[i] == "1")
+            //        {
+            //            task.completeStatus = true;
+            //        }
+            //        else
+            //        {
+            //            task.completeStatus = false;
+            //        }
 
-                for (int i = 1; i < details.Length; i++)
-                {
-                    if (details[i] == "1")
-                    {
-                        tempentry.tasks[i - 1].completeStatus = true;
-                    }
-                    else
-                    {
-                        tempentry.tasks[i - 1].completeStatus = false;
-                    }
-                }
+            //        tempEntry.tasks.Add(task);
 
-                app.entries.Add(tempentry);
-            }
+            //    }
+
+            //    app.entries.Add(tempEntry);
+            //}
 
 
 

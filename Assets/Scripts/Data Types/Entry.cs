@@ -8,5 +8,7 @@ using UnityEngine;
 [System.Serializable]
 public class Entry
 {
-    Dictionary<string, List<Task>> entryInfo = new Dictionary<string, List<Task>>();
+    public string date;
+    public List<Task> tasks = new List<Task>();
+
 }
